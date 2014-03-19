@@ -2,13 +2,20 @@
 /*
 14.03.2014, Ludovic LAVY
 
-
-
 Change log :
-2014.03.14
+
+===== 2014.03.17 =====
+- EEprom Mode = 1
+- #define DRIVE_SYSTEM 0 (normal printer (not delta)
+
+======================
+
+===== 2014.03.14 =====
 - EEprom Mode = 0
 - Drive system = 3 = Delta printer
+- Baud rate = 250000
 
+======================
 
 */
 /*
@@ -100,7 +107,7 @@ is a full cartesian system where x, y and z moves are handled by seperate motors
 Cases 1 and 2 cover all needed xy H gantry systems. If you get results mirrored etc. you can swap motor connections for x and y. If a motor turns in 
 the wrong direction change INVERT_X_DIR or INVERT_Y_DIR.
 */
-#define DRIVE_SYSTEM 3
+#define DRIVE_SYSTEM 0
 
 // ##########################################################################################
 // ##                               Calibration                                            ##
@@ -976,8 +983,8 @@ to activate the quadratic term. Only adds lots of computations and storage usage
  Overridden if EEPROM activated.
 */
 //#define BAUDRATE 76800
-#define BAUDRATE 115200
-//#define BAUDRATE 250000
+//#define BAUDRATE 115200
+#define BAUDRATE 250000
 
 /**
 Some boards like Gen7 have a power on pin, to enable the atx power supply. If this is defined,
@@ -1031,7 +1038,7 @@ matches, the stored values are used to overwrite the settings.
 IMPORTANT: With mode <>0 some changes in configuration.h are not set any more, as they are 
            taken from the EEPROM.
 */
-#define EEPROM_MODE 0
+#define EEPROM_MODE 1
 /** Set to false to disable SD support: */
 #ifndef SDSUPPORT  // Some boards have sd support on board. These define the values already in pins.h
 #define SDSUPPORT false
