@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)http://reprap.org/wiki/RAMPS-FD -->
+<html lang="en" dir="ltr" class="client-js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>RAMPS-FD - RepRapWiki</title>
+<meta charset="UTF-8">
+<meta name="generator" content="MediaWiki 1.21.1">
+<link rel="shortcut icon" href="http://reprap.org/favicon.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="http://reprap.org/mediawiki/opensearch_desc.php" title="RepRapWiki (en)">
+<link rel="EditURI" type="application/rsd+xml" href="http://reprap.org/mediawiki/api.php?action=rsd">
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html">
+<link rel="alternate" type="application/atom+xml" title="RepRapWiki Atom feed" href="http://reprap.org/mediawiki/index.php?title=Special:RecentChanges&feed=atom">
+<link rel="alternate" type="application/rss+xml" title="RepRapWiki RSS feed" href="http://reprap.org/mediawiki/index.php?title=Special:RecentChanges&feed=rss">
+<link rel="stylesheet" href="http://reprap.org/mediawiki/load.php?debug=false&lang=en&modules=mediawiki.legacy.commonPrint%2Cshared%7Cskins.vector&only=styles&skin=vector&*">
+<style>
+.mw-collapsible-toggle{float:right} li .mw-collapsible-toggle{float:none} .mw-collapsible-toggle-li{list-style:none}
+/* cache key: mediawiki_121:resourceloader:filter:minify-css:7:4250852ed2349a0d4d0fc6509a3e7d4c */
+.suggestions{overflow:hidden;position:absolute;top:0;left:0;width:0;border:none;z-index:1099;padding:0;margin:-1px -1px 0 0} html > body .suggestions{margin:-1px 0 0 0}.suggestions-special{position:relative;background-color:white;cursor:pointer;border:solid 1px #aaaaaa;padding:0;margin:0;margin-top:-2px;display:none;padding:0.25em 0.25em;line-height:1.25em}.suggestions-results{background-color:white;cursor:pointer;border:solid 1px #aaaaaa;padding:0;margin:0}.suggestions-result{color:black;margin:0;line-height:1.5em;padding:0.01em 0.25em;text-align:left}.suggestions-result-current{background-color:#4C59A6;color:white}.suggestions-special .special-label{color:gray;text-align:left}.suggestions-special .special-query{color:black;font-style:italic;text-align:left}.suggestions-special .special-hover{background-color:silver}.suggestions-result-current .special-label,.suggestions-result-current .special-query{color:white}.autoellipsis-matched,.highlight{font-weight:bold}
+/* cache key: mediawiki_121:resourceloader:filter:minify-css:7:9780324491b653a3780e2d029bdc140c */</style><style>
+.suggestions a.mw-searchSuggest-link,.suggestions a.mw-searchSuggest-link:hover,.suggestions a.mw-searchSuggest-link:active,.suggestions a.mw-searchSuggest-link:focus{text-decoration:none;color:black}.suggestions-result-current a.mw-searchSuggest-link,.suggestions-result-current a.mw-searchSuggest-link:hover,.suggestions-result-current a.mw-searchSuggest-link:active,.suggestions-result-current a.mw-searchSuggest-link:focus{color:white}
+/* cache key: mediawiki_121:resourceloader:filter:minify-css:7:52b1797f70c7e4094dfa4191101944e8 */</style><meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="http://reprap.org/mediawiki/load.php?debug=false&lang=en&modules=site&only=styles&skin=vector&*">
+<style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+/* cache key: mediawiki_121:resourceloader:filter:minify-css:7:0c3e4654831aeb1f565f4042e7f0f926 */</style>
+
+<script src="./RAMPS-FD - RepRapWiki_files/load.php"></script><script src="./RAMPS-FD - RepRapWiki_files/load(1).php"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"RAMPS-FD","wgTitle":"RAMPS-FD","wgCurRevisionId":131824,"wgArticleId":20976,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Working developments","RAMPS","Electronics","Surface-mount electronics"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"RAMPS-FD","wgRestrictionEdit":[],"wgRestrictionMove":[],"wgRestrictionRead":[],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}"});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function(){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":1,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"imagesize":2,"justify":0,"math":6,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":1,"showtoolbar":1,"skin":"vector","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,"watchlistdays":3,
+"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"searchNs274":false,"searchNs275":false});;},{},{});mw.loader.implement("user.tokens",function(){mw.user.tokens.set({"editToken":"+\\","patrolToken":false,"watchToken":false});;},{},{});
+/* cache key: mediawiki_121:resourceloader:filter:minify-js:7:693c4e15be025fa0b3a3b7a8bd3447ec */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax"]);
+}</script><script src="./RAMPS-FD - RepRapWiki_files/load(2).php"></script>
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/mediawiki/skins/vector/csshover.min.htc")}</style><![endif]--><script async="" src="./RAMPS-FD - RepRapWiki_files/load(3).php"></script><style type="text/css"></style></head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-RAMPS-FD skin-vector action-view vector-animateLayout">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<!-- content -->
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div id="mw-js-message" style="display:none;"></div>
+						<!-- firstHeading -->
+			<h1 id="firstHeading" class="firstHeading" lang="en"><span dir="auto">RAMPS-FD</span></h1>
+			<!-- /firstHeading -->
+			<!-- bodyContent -->
+			<div id="bodyContent">
+								<!-- tagline -->
+				<div id="siteSub">From RepRapWiki</div>
+				<!-- /tagline -->
+								<!-- subtitle -->
+				<div id="contentSub"></div>
+				<!-- /subtitle -->
+																<!-- jumpto -->
+				<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="http://reprap.org/wiki/RAMPS-FD#mw-navigation">navigation</a>, 					<a href="http://reprap.org/wiki/RAMPS-FD#p-search">search</a>
+				</div>
+				<!-- /jumpto -->
+								<!-- bodycontent -->
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><p><script type="text/javascript">
+if ( 'working'.replace('&lt;'+"script","script").toLowerCase() == 'Unknown'.replace('&lt;'+"script","script").toLowerCase() )
+{
+document.write('<style>.devBox{background-color:#CCCCCC;}</style>'.replace('&lt;'+"script","_script"));
+}
+else
+{
+document.write(''.replace('&lt;'+"script","_script"));
+}
+</script>
+<script type="text/javascript">
+if ( 'working'.replace('&lt;'+"script","script").toLowerCase() == 'Abandoned'.replace('&lt;'+"script","script").toLowerCase() )
+{
+document.write('<style>.devBox{background-color:#000000;}</style>'.replace('&lt;'+"script","_script"));
+}
+else
+{
+document.write(''.replace('&lt;'+"script","_script"));
+}
+</script>
+<script type="text/javascript">
+if ( 'working'.replace('&lt;'+"script","script").toLowerCase() == 'Obsolete'.replace('&lt;'+"script","script").toLowerCase() )
+{
+document.write('<style>.devBox{background-color:#CCCCCC;}</style>'.replace('&lt;'+"script","_script"));
+}
+else
+{
+document.write(''.replace('&lt;'+"script","_script"));
+}
+</script>
+<script type="text/javascript">
+if ( 'working'.replace('&lt;'+"script","script").toLowerCase() == 'Concept'.replace('&lt;'+"script","script").toLowerCase() )
+{
+document.write('<style>.devBox{background-color:#FF9933;}</style>'.replace('&lt;'+"script","_script"));
+}
+else
+{
+document.write(''.replace('&lt;'+"script","_script"));
+}
+</script>
+<script type="text/javascript">
+if ( 'working'.replace('&lt;'+"script","script").toLowerCase() == 'Experimental'.replace('&lt;'+"script","script").toLowerCase() )
+{
+document.write('<style>.devBox{background-color:#00B;}</style>'.replace('&lt;'+"script","_script"));
+}
+else
+{
+document.write(''.replace('&lt;'+"script","_script"));
+}
+</script>
+<script type="text/javascript">
+if ( 'working'.replace('&lt;'+"script","script").toLowerCase() == 'Working'.replace('&lt;'+"script","script").toLowerCase() )
+{
+document.write('<style>.devBox{background-color:#009200;}</style>'.replace('&lt;'+"script","_script"));
+}
+else
+{
+document.write(''.replace('&lt;'+"script","_script"));
+}
+</script><style>.devBox{background-color:#009200;}</style>
+<script type="text/javascript">
+if ( 'working'.replace('&lt;'+"script","script").toLowerCase() == 'Prototype'.replace('&lt;'+"script","script").toLowerCase() )
+{
+document.write('<style>.devBox{background-color:#2B60DE;}</style>'.replace('&lt;'+"script","_script"));
+}
+else
+{
+document.write(''.replace('&lt;'+"script","_script"));
+}
+</script>
+</p>
+<div class="devBox" style="float: right; width:240px;color: white; padding-top: 3px; padding-bottom: 5px; font-weight: bold;">
+<div class="floatleft"><a href="http://reprap.org/wiki/File:Crystal_Clear_action_run.png" class="image"><img alt="Crystal Clear action run.png" src="./RAMPS-FD - RepRapWiki_files/40px-Crystal_Clear_action_run.png" width="40" height="40" data-url="/mediawiki/images/thumb/5/5d/Crystal_Clear_action_run.png/40px-Crystal_Clear_action_run.png" data-srcset="/mediawiki/images/thumb/5/5d/Crystal_Clear_action_run.png/60px-Crystal_Clear_action_run.png 1.5x, /mediawiki/images/thumb/5/5d/Crystal_Clear_action_run.png/80px-Crystal_Clear_action_run.png 2x" srcset="/mediawiki/images/thumb/5/5d/Crystal_Clear_action_run.png/60px-Crystal_Clear_action_run.png 1.5x, /mediawiki/images/thumb/5/5d/Crystal_Clear_action_run.png/80px-Crystal_Clear_action_run.png 2x" style="display: inline;"></a></div> <span style="font-size: 130%;">RAMPS-FD</span><br>
+<p>Release status: working
+</p>
+<div style="background-color: white; margin-left: 5px; margin-right: 5px; padding-top: 5px; color: black; font-weight: normal;">
+<div class="center"><div class="floatnone"><a href="http://reprap.org/wiki/File:RAMPS-FD_v1A.JPG" class="image"><img alt="RAMPS-FD v1A.JPG" src="./RAMPS-FD - RepRapWiki_files/190px-RAMPS-FD_v1A.JPG" width="190" height="143" data-url="/mediawiki/images/thumb/3/36/RAMPS-FD_v1A.JPG/190px-RAMPS-FD_v1A.JPG" data-srcset="/mediawiki/images/thumb/3/36/RAMPS-FD_v1A.JPG/285px-RAMPS-FD_v1A.JPG 1.5x, /mediawiki/images/thumb/3/36/RAMPS-FD_v1A.JPG/380px-RAMPS-FD_v1A.JPG 2x" srcset="/mediawiki/images/thumb/3/36/RAMPS-FD_v1A.JPG/285px-RAMPS-FD_v1A.JPG 1.5x, /mediawiki/images/thumb/3/36/RAMPS-FD_v1A.JPG/380px-RAMPS-FD_v1A.JPG 2x" style="display: inline;"></a></div></div>
+<table>
+<tbody><tr>
+<td style="vertical-align: top"> <b>Description</b> </td>
+<td> RAMPS for Arduino Due
+</td></tr>
+<tr>
+<td style="vertical-align: top"> <b>License</b> </td>
+<td> GPL
+</td></tr>
+<tr>
+<td style="vertical-align: top"> <b>Author</b> </td>
+<td> <a href="http://reprap.org/mediawiki/index.php?title=User:Bobc&action=edit&redlink=1" class="new" title="User:Bobc (page does not exist)">bobc</a>
+</td></tr>
+<tr>
+<td style="vertical-align: top"> <b>Based-on</b> </td>
+<td> <a href="http://reprap.org/wiki/Ramps" title="Ramps" class="mw-redirect">Ramps</a>
+</td></tr>
+<tr>
+<td style="vertical-align: top"> <b>Categories</b> </td>
+<td> <a href="http://reprap.org/wiki/Category:RAMPS" title="Category:RAMPS"><span>RAMPS</span></a>, <a href="http://reprap.org/wiki/Category:Electronics" title="Category:Electronics"><span>electronics</span></a>, <a href="http://reprap.org/mediawiki/index.php?title=Category:Surface-mount_electronics&action=edit&redlink=1" class="new" title="Category:Surface-mount electronics (page does not exist)"><span>surface-mount electronics</span></a>
+</td></tr>
+<tr>
+<td style="vertical-align: top"> <b>CAD Models</b> </td>
+<td> KiCAD
+</td></tr>
+<tr>
+<td style="vertical-align: top"> <b>External Link</b> </td>
+<td> <a rel="nofollow" class="external text" href="https://github.com/bobc/bobc_hardware/tree/master/RAMPS-FD">github</a>
+</td></tr></tbody></table>
+</div>
+</div>
+<p><br>
+</p>
+<table id="toc" class="toc"><tbody><tr><td><div id="toctitle"><h2>Contents</h2><span class="toctoggle">&nbsp;[<a href="http://reprap.org/wiki/RAMPS-FD#" class="internal" id="togglelink">hide</a>]&nbsp;</span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="http://reprap.org/wiki/RAMPS-FD#RAMPS_For_Arduino_Due"><span class="tocnumber">1</span> <span class="toctext">RAMPS For Arduino Due</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="http://reprap.org/wiki/RAMPS-FD#Why_should_i_use_Ramps-FD_instead_of_Ramps1.4"><span class="tocnumber">1.1</span> <span class="toctext">Why should i use Ramps-FD instead of Ramps1.4</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="http://reprap.org/wiki/RAMPS-FD#why_should_i_selectArduino_Due_instead_of_Arduino_Mega"><span class="tocnumber">1.2</span> <span class="toctext">why should i selectArduino Due instead of Arduino Mega</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="http://reprap.org/wiki/RAMPS-FD#Hardware_issues"><span class="tocnumber">1.3</span> <span class="toctext">Hardware issues</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="http://reprap.org/wiki/RAMPS-FD#Hardware_features_known_to_be_compatible"><span class="tocnumber">1.4</span> <span class="toctext">Hardware features known to be compatible</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="http://reprap.org/wiki/RAMPS-FD#Sources"><span class="tocnumber">1.5</span> <span class="toctext">Sources</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="http://reprap.org/wiki/RAMPS-FD#How_to_get"><span class="tocnumber">1.6</span> <span class="toctext">How to get</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></tbody></table>
+<h1> <span class="mw-headline" id="RAMPS_For_Arduino_Due"> RAMPS For Arduino Due </span></h1>
+<p>RAMPS-FD v1.A is now in beta!
+</p>
+<ul class="gallery">
+		<li class="gallerybox" style="width: 155px"><div style="width: 155px">
+			<div class="thumb" style="width: 150px;"><div style="margin:30px auto;"><a href="http://reprap.org/wiki/File:RAMPS-FD_v1A.JPG" class="image"><img alt="RAMPS-FD v1A.JPG" src="./RAMPS-FD - RepRapWiki_files/120px-RAMPS-FD_v1A.JPG" width="120" height="90" data-url="/mediawiki/images/thumb/3/36/RAMPS-FD_v1A.JPG/120px-RAMPS-FD_v1A.JPG" style="display: block;"></a></div></div>
+			<div class="gallerytext">
+			</div>
+		</div></li>
+</ul>
+<p>Arduino Due is the new Arduino board that is using an ARM Cortex M3 CPU.
+The Atmel SAM3X8E chip used on the Due operates at 3.3V and is not compatible with 5V. Therefore the RAMPS shield will not work with Due, and worse applying 5V to the Due's inputs will likely damage the chip.
+Therefore there are several possibilities:
+create a new RAMPS variant which is compatible with the Due. Possibly could also be made backwards compatible with Mega.
+create a RAMPS Interface Board (RIB) to sit between Due and RAMPS to perform level-shifting, and any other needed functions.
+</p>
+<h2> <span class="mw-headline" id="Why_should_i_use_Ramps-FD_instead_of_Ramps1.4">Why should i use Ramps-FD instead of Ramps1.4</span></h2>
+<p>Campare Ramps-FD with Ramps1.4,the Improvements of Ramps-FD are below
+</p>
+<ul><li>The RAMPS-FD has other hardware protection, through the jumper cap control motor drive IC
+</li><li>The RAMPS-FD Much more than Ramps1.4 2-way PWM
+</li><li>The RAMPS-FD has Larger driving power than Ramps1.4
+</li><li>The RAMPS-FD 'POWER has two choices：12v and 24v
+</li></ul>
+<h2> <span class="mw-headline" id="why_should_i_selectArduino_Due_instead_of_Arduino_Mega">why should i selectArduino Due instead of Arduino Mega</span></h2>
+<ul><li>due has lower power ，computing faster and flash，sram bigger than mega2560
+</li><li>CPU operates at 3.3V
+</li><li>High-current IO pins are capable of 15 mA source, 9 mA sink
+</li><li>Low-current IO pins capable of 3 mA source, 6 mA sink
+</li><li>CPU package has an absolute max of 130mA
+</li><li>The Due has 1 dedicated SPI port, and 4 multipurpose USART/SPI ports. The SPI port is only routed to the 6 pin header used for ICSP on Mega, but this is not used for ICSP on Due.
+</li><li>The Due does not have any EEPROM
+</li></ul>
+<h2> <span class="mw-headline" id="Hardware_issues">Hardware issues</span></h2>
+<ul><li>MOSFETs need to be compatible with threshold voltage of 3.3V or better have a gate driver which allows any MOSFET to be used
+</li><li>Expansion pins need to be level-translated, but this depends on how they are used
+<ul><li>Add ons: SD card, thermocouple drivers, LCD boards
+</li></ul>
+</li><li>Is heat dissipation of Due ok with RAMPS shield over it?
+</li><li>Some opto-endstops need 5V power, and return 5V on signal
+</li><li>(AUX-3) The SPI pins on the Mega (mapped to pins D50-52) are not SPI pins on Due
+</li></ul>
+<h2> <span class="mw-headline" id="Hardware_features_known_to_be_compatible">Hardware features known to be compatible</span></h2>
+<ul><li>The Allegro stepper drivers will run with VDD = 3.3V and the logic signals compatible with 3.3V. This should apply to all the Pololu style drivers.
+</li><li>Servos "should" be able to operate with +5V power and a PWM signal of 3.3V
+</li><li>Thermistors will operate at 3.3V but the Analog Ref is also 3.3V, so no changes should be necessary
+</li><li>Mechanical endstops should be OK, if they do not use external pullup to 5V
+</li></ul>
+<p><br>
+For more information, please check <a rel="nofollow" class="external text" href="http://www.geeetech.com/wiki/index.php/Ramps-FD">Geeetech</a>
+</p>
+<h2> <span class="mw-headline" id="Sources"> Sources </span></h2>
+<p>Source files are hosted at <a rel="nofollow" class="external text" href="https://github.com/bobc/bobc_hardware/tree/master/RAMPS-FD">github</a>.
+</p><p><a rel="nofollow" class="external text" href="https://github.com/bobc/bobc_hardware/blob/master/RAMPS-FD/RAMPS-FD-Schematic.pdf">Schematic</a>
+</p><p><br>
+(The Arduino Due is based on a 84 MHz Atmel 32-bit ARM Cortex-M3 CPU with USB OTG).
+</p>
+<h2> <span class="mw-headline" id="How_to_get">How to get</span></h2>
+<p><a rel="nofollow" class="external text" href="http://www.geeetech.com/new-pololu-shield-rampsfd-for-arduino-due-3d-printer-controller-p-770.html">Geeetech</a>
+</p>
+<!-- 
+NewPP limit report
+Preprocessor visited node count: 134/1000000
+Preprocessor generated node count: 621/1000000
+Post‐expand include size: 2282/2097152 bytes
+Template argument size: 761/2097152 bytes
+Highest expansion depth: 3/40
+Expensive parser function count: 0/100
+-->
+</div>				<!-- /bodycontent -->
+								<!-- printfooter -->
+				<div class="printfooter">
+				Retrieved from "<a href="http://reprap.org/mediawiki/index.php?title=RAMPS-FD&oldid=131824">http://reprap.org/mediawiki/index.php?title=RAMPS-FD&amp;oldid=131824</a>"				</div>
+				<!-- /printfooter -->
+												<!-- catlinks -->
+				<div id="catlinks" class="catlinks"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="http://reprap.org/wiki/Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="http://reprap.org/wiki/Category:Working_developments" title="Category:Working developments">Working developments</a></li><li><a href="http://reprap.org/wiki/Category:RAMPS" title="Category:RAMPS">RAMPS</a></li><li><a href="http://reprap.org/wiki/Category:Electronics" title="Category:Electronics">Electronics</a></li><li><a href="http://reprap.org/mediawiki/index.php?title=Category:Surface-mount_electronics&action=edit&redlink=1" class="new" title="Category:Surface-mount electronics (page does not exist)">Surface-mount electronics</a></li></ul></div></div>				<!-- /catlinks -->
+												<div class="visualClear"></div>
+				<!-- debughtml -->
+								<!-- /debughtml -->
+			</div>
+			<!-- /bodyContent -->
+		</div>
+		<!-- /content -->
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+			<!-- header -->
+			<div id="mw-head">
+				
+<!-- 0 -->
+<div id="p-personal" role="navigation" class="">
+	<h3>Personal tools</h3>
+	<ul>
+<li id="pt-createaccount"><a href="http://reprap.org/mediawiki/index.php?title=Special:UserLogin&returnto=RAMPS-FD&type=signup">Create account</a></li><li id="pt-login"><a href="http://reprap.org/mediawiki/index.php?title=Special:UserLogin&returnto=RAMPS-FD" title="You are encouraged to log in; however, it is not mandatory [alt-shift-o]" accesskey="o">Log in</a></li>	</ul>
+</div>
+
+<!-- /0 -->
+				<div id="left-navigation">
+					
+<!-- 0 -->
+<div id="p-namespaces" role="navigation" class="vectorTabs">
+	<h3>Namespaces</h3>
+	<ul>
+					<li id="ca-nstab-main" class="selected"><span><a href="./RAMPS-FD - RepRapWiki_files/RAMPS-FD - RepRapWiki.htm" title="View the content page [alt-shift-c]" accesskey="c">Page</a></span></li>
+					<li id="ca-talk" class="new"><span><a href="http://reprap.org/mediawiki/index.php?title=Talk:RAMPS-FD&action=edit&redlink=1" title="Discussion about the content page [alt-shift-t]" accesskey="t">Discussion</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet">
+	<h3 id="mw-vector-current-variant">
+		</h3>
+	<h3><span>Variants</span><a href="http://reprap.org/wiki/RAMPS-FD#"></a></h3>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+				</div>
+				<div id="right-navigation">
+					
+<!-- 0 -->
+<div id="p-views" role="navigation" class="vectorTabs">
+	<h3>Views</h3>
+	<ul>
+					<li id="ca-view" class="selected"><span><a href="./RAMPS-FD - RepRapWiki_files/RAMPS-FD - RepRapWiki.htm">Read</a></span></li>
+					<li id="ca-viewsource"><span><a href="http://reprap.org/mediawiki/index.php?title=RAMPS-FD&action=edit" title="This page is protected.
+You can view its source [alt-shift-e]" accesskey="e">View source</a></span></li>
+					<li id="ca-history" class="collapsible"><span><a href="http://reprap.org/mediawiki/index.php?title=RAMPS-FD&action=history" title="Past revisions of this page [alt-shift-h]" accesskey="h">View history</a></span></li>
+			</ul>
+</div>
+
+<!-- /0 -->
+
+<!-- 1 -->
+<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet">
+	<h3><span>Actions</span><a href="http://reprap.org/wiki/RAMPS-FD#"></a></h3>
+	<div class="menu">
+		<ul>
+					</ul>
+	</div>
+</div>
+
+<!-- /1 -->
+
+<!-- 2 -->
+<div id="p-search" role="search">
+	<h3><label for="searchInput">Search</label></h3>
+	<form action="http://reprap.org/mediawiki/index.php" id="searchform">
+				<div>
+			<input type="search" name="search" title="Search RepRapWiki [alt-shift-f]" accesskey="f" id="searchInput" autocomplete="off" placeholder="Search">			<input type="submit" name="go" value="Go" title="Go to a page with this exact name if exists" id="searchGoButton" class="searchButton">			<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton">					<input type="hidden" name="title" value="Special:Search">
+		</div>
+	</form>
+</div>
+
+<!-- /2 -->
+				</div>
+			</div>
+			<!-- /header -->
+			<!-- panel -->
+			<div id="mw-panel">
+				<!-- logo -->
+					<div id="p-logo" role="banner"><a style="background-image: url(/mediawiki/reprap_logo.png);" href="http://reprap.org/wiki/Main_Page" title="Visit the main page"></a></div>
+				<!-- /logo -->
+				
+<!-- SEARCH -->
+
+<!-- /SEARCH -->
+
+<!-- navigation -->
+<div class="portal" role="navigation" id="p-navigation">
+	<h3>Navigation</h3>
+	<div class="body">
+		<ul>
+			<li id="n-Main-Page"><a href="http://reprap.org/wiki/RepRap">Main Page</a></li>
+			<li id="n-Build-a-RepRap"><a href="http://reprap.org/wiki/RepRap_Options">Build a RepRap</a></li>
+			<li id="n-Glossary"><a href="http://reprap.org/wiki/Glossary">Glossary</a></li>
+			<li id="n-Reference"><a href="http://reprap.org/wiki/Reference">Reference</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- /navigation -->
+
+<!-- Participation -->
+<div class="portal" role="navigation" id="p-Participation">
+	<h3>Participation</h3>
+	<div class="body">
+		<ul>
+			<li id="n-Recent-Changes"><a href="http://reprap.org/wiki/Special:RecentChanges">Recent Changes</a></li>
+			<li id="n-Create-a-new-page"><a href="http://reprap.org/wiki/Very_Messy_Example">Create a new page</a></li>
+			<li id="n-Donation-Page"><a href="http://sourceforge.net/donate/index.php?group_id=159590" rel="nofollow">Donation Page</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- /Participation -->
+
+<!-- Community -->
+<div class="portal" role="navigation" id="p-Community">
+	<h3>Community</h3>
+	<div class="body">
+		<ul>
+			<li id="n-Development-Index"><a href="http://reprap.org/wiki/Development">Development Index</a></li>
+			<li id="n-Planet-RepRap"><a href="http://planet.arcol.hu/" rel="nofollow">Planet RepRap</a></li>
+			<li id="n-Blog-of-Blogs"><a href="http://pipes.yahoo.com/pipesadrian_reprap_pipe/reprap" rel="nofollow">Blog of Blogs</a></li>
+			<li id="n-IRC"><a href="http://reprap.org/wiki/IRC">IRC</a></li>
+			<li id="n-Forums"><a href="http://forums.reprap.org/" rel="nofollow">Forums</a></li>
+			<li id="n-RepRap-Groups"><a href="http://forums.reprap.org/index.php?19" rel="nofollow">RepRap Groups</a></li>
+			<li id="n-Community-Portal"><a href="http://reprap.org/wiki/RepRapWiki:Community">Community Portal</a></li>
+			<li id="n-Licence"><a href="http://reprap.org/wiki/RepRapGPLLicence">Licence</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- /Community -->
+
+<!-- TOOLBOX -->
+<div class="portal" role="navigation" id="p-tb">
+	<h3>Toolbox</h3>
+	<div class="body">
+		<ul>
+			<li id="t-whatlinkshere"><a href="http://reprap.org/wiki/Special:WhatLinksHere/RAMPS-FD" title="A list of all wiki pages that link here [alt-shift-j]" accesskey="j">What links here</a></li>
+			<li id="t-recentchangeslinked"><a href="http://reprap.org/wiki/Special:RecentChangesLinked/RAMPS-FD" title="Recent changes in pages linked from this page [alt-shift-k]" accesskey="k">Related changes</a></li>
+			<li id="t-specialpages"><a href="http://reprap.org/wiki/Special:SpecialPages" title="A list of all special pages [alt-shift-q]" accesskey="q">Special pages</a></li>
+			<li id="t-print"><a href="http://reprap.org/mediawiki/index.php?title=RAMPS-FD&printable=yes" rel="alternate" title="Printable version of this page [alt-shift-p]" accesskey="p">Printable version</a></li>
+			<li id="t-permalink"><a href="http://reprap.org/mediawiki/index.php?title=RAMPS-FD&oldid=131824" title="Permanent link to this revision of the page">Permanent link</a></li>
+			<li id="t-info"><a href="http://reprap.org/mediawiki/index.php?title=RAMPS-FD&action=info">Page information</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- /TOOLBOX -->
+
+<!-- LANGUAGES -->
+
+<!-- /LANGUAGES -->
+
+				<div class="portal" role="navigation" id="adsense">
+				<div class="body">
+				<!-- Google AdSense "skyscaper" block (125x600) -->
+<script type="text/javascript"><!--
+google_ad_client = "pub-7619640428450381";
+google_ad_width = 120;
+google_ad_height = 600;
+google_ad_format = "120x600_as";
+google_ad_type = "text";
+google_ad_channel = "";
+google_color_border = "FFFFFF";
+google_color_bg = "F9F9F9";
+google_color_link = "0000FF";
+google_color_text = "000000";
+google_color_url = "008000";
+//--></script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+				</div>
+				</div>
+			</div>
+			<!-- /panel -->
+		</div>
+		<!-- footer -->
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> This page was last modified on 24 August 2014, at 21:01.</li>
+											<li id="footer-info-copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a>.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="http://reprap.org/wiki/RepRapWiki:Privacy_policy" title="RepRapWiki:Privacy policy">Privacy policy</a></li>
+											<li id="footer-places-about"><a href="http://reprap.org/wiki/RepRapWiki:About" title="RepRapWiki:About">About RepRapWiki</a></li>
+											<li id="footer-places-disclaimer"><a href="http://reprap.org/wiki/RepRapWiki:General_disclaimer" title="RepRapWiki:General disclaimer">Disclaimers</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+					<li id="footer-copyrightico">
+						<a href="http://www.gnu.org/copyleft/fdl.html"><img src="./RAMPS-FD - RepRapWiki_files/gnu-fdl.png" alt="GNU Free Documentation License 1.2" width="88" height="31"></a>
+					</li>
+					<li id="footer-poweredbyico">
+						<a href="http://www.mediawiki.org/"><img src="./RAMPS-FD - RepRapWiki_files/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31"></a>
+					</li>
+				</ul>
+						<div style="clear:both"></div>
+		</div>
+		<!-- /footer -->
+		<script>if(window.mw){
+mw.loader.state({"site":"loading","user":"missing","user.groups":"ready"});
+}</script>
+<script>if(window.mw){
+mw.loader.load(["mediawiki.action.view.postEdit","mediawiki.user","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.hidpi","ext.lazyload","skins.vector.js"], null, true);
+}</script>
+<script src="./RAMPS-FD - RepRapWiki_files/load(4).php"></script>
+<!-- Served in 0.132 secs. -->
+	
+
+<div class="suggestions" style="display: none; font-size: 13px;"><div class="suggestions-results"></div><div class="suggestions-special"></div></div><script id="hiddenlpsubmitdiv" style="display: none;"></script><script>try{for(var lastpass_iter=0; lastpass_iter < document.forms.length; lastpass_iter++){ var lastpass_f = document.forms[lastpass_iter]; if(typeof(lastpass_f.lpsubmitorig2)=="undefined"){ lastpass_f.lpsubmitorig2 = lastpass_f.submit; lastpass_f.submit = function(){ var form=this; var customEvent = document.createEvent("Event"); customEvent.initEvent("lpCustomEvent", true, true); var d = document.getElementById("hiddenlpsubmitdiv"); if (d) {for(var i = 0; i < document.forms.length; i++){ if(document.forms[i]==form){ d.innerText=i; } } d.dispatchEvent(customEvent); }form.lpsubmitorig2(); } } }}catch(e){}</script></body></html>
